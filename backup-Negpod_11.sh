@@ -17,3 +17,10 @@ perform_data_backup() {
         echo "Backup process failed. Please review your settings and try again."
     fi
 }
+
+if [ -d "$local_location" ]; then
+    # Execute backup process
+    perform_data_backup
+else
+    echo "Error: The local location '$local_location' was not found. Please provide the correct directory path."
+fi
