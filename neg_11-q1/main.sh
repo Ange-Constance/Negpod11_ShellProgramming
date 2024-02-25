@@ -19,3 +19,14 @@ display_menu() {
     *) echo "Invalid option. Please try again."; display_menu;;
   esac
 }
+
+create_record() {
+  # this function will create a new student record
+  # author: @hirwablessing
+  read -p "Enter student email: " email
+  read -p "Enter student age: " age
+  read -p "Enter student ID: " student_id
+  echo "$student_id,$email,$age" >> $FILE
+  echo "Student record created."
+  display_menu
+}
