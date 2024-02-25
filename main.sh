@@ -40,3 +40,9 @@ view_records() {
   fi
   display_menu
 }
+delete_record() {
+  read -p "Enter student ID to delete: " student_id
+  grep -v "^$student_id," $FILE > temp.txt && mv temp.txt $FILE
+  echo "Record deleted."
+  display_menu
+}
