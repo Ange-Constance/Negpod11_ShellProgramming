@@ -22,7 +22,6 @@ display_menu() {
 
 create_record() {
   # this function will create a new student record
-  # author: @hirwablessing
   read -p "Enter student email: " email
   read -p "Enter student age: " age
   read -p "Enter student ID: " student_id
@@ -65,3 +64,4 @@ update_record() {
   fi
   display_menu
 }
+
