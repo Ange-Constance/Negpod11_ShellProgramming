@@ -12,7 +12,20 @@ Enter the student's email, age, and student ID.
 The record is saved to students-list_1023.txt.
 
 2.View All Students:
+Terminates the application.
 
+<h1>Automation and backup</h1>
+
+1. move-to-directory.sh
+
+Functionality:
+Automatically moves the four files created in Question 1 (main.sh, students-list_1023.txt, select-emails.sh, and student-emails.txt) to a directory named negpod_11-q1.
+Usage:
+Execute the script from the project directory: ./move-to-directory.sh
+2. backup-Negpod_11.sh
+
+Functionality:
+Creates a backup of the directory created in Question 2 (containing the files from Question 1) to a remote server.
 Displays a list of all registered students with their details.
 
 3.Delete Student Record:
