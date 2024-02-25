@@ -30,3 +30,13 @@ create_record() {
   echo "Student record created."
   display_menu
 }
+
+view_records() {
+  if [ -f $FILE ]; then
+    echo "Student ID, Email, Age"
+    cat $FILE
+  else
+    echo "No records found."
+  fi
+  display_menu
+}
