@@ -65,3 +65,4 @@ update_record() {
   display_menu
 }
 
+display_menu
