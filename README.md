@@ -15,7 +15,12 @@ The record is saved to students-list_1023.txt.
 Terminates the application.
 
 <h1>Automation and backup</h1>
+<h3>Testing Backup:</h3>
 
+1.Create a test directory with the same structure as the one you want to back up.
+2.Run the backup-Negpod_11.sh script with the test directory path.
+3.Verify that the test directory contents are successfully copied to the remote server location.
+Footer
 1. move-to-directory.sh
 
 Functionality:
